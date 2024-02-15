@@ -1,0 +1,124 @@
+<!-- click derecho Format Document para ordenar el codigo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Contrato</title>
+    <meta name="description" content="En Edificio La Rotendiu, nos dedicamos a ofrecer soluciones integrales en consultoría, problematicas. Con un enfoque centrado en la excelencia y la innovación, trabajamos de la mano de nuestros clientes".>
+    <meta name="keywords" content="Alquiler, proyectos, contratos, consultora, casas, departamentos, problematicas, consultas">
+    <link rel="icon" href="../img/icono-edificio.png">
+    <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+    <!--   este link de abajo de saca de bootstrap cdn js deliver se copia uno aca encima y el otro link que dice script se pega abajo en parte inferior antes del cierre de body-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <!-- Style  
+    <link rel="stylesheet" href="./scss/style.css"> queda pendiente cambiarlo por el de sass-->   
+        <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header container-fluid">
+      <a class="header__logo" href="../index.html"></a>
+      <nav class="header__menu">
+        <input type="checkbox" id="menu__mobile">
+        <span class="header__icon-open"></span>
+        <span class="header__icon-close"></span>
+        <ul>  
+          <li><a class="header__link" href="../index.html">Inicio</a></li>
+          <li><a class="header__link" href="./consultas.html">Tu consulta</a></li>
+          <li><a class="header__link" href="./contrato.html">Contrato</a></li>
+          <li><a class="header__link" href="./presupuesto.html">Presupuesto</a></li>
+          <li><a class="header__link" href="./quejas.html">Quejas</a></li> 
+          <li><a class="header__link header__link--active" href="./registroingreso.html">Registro</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ <!-- Main -->
+ <main id="top">
+
+   <!-- Intro Biografia -->
+   <section id="bioIntro" class="intro bg--fixed">
+    <div class="container">
+      <h1 class="intro__title">Registro</h1>
+    </div>
+  </section>  
+
+  <!-- texto Biografia -->
+  <section class="section">
+    <div class="container">
+
+      <div class="row py-5">
+        <div class="col-lg-6 col-md-4 p-3 p-lg-5">
+          <h2 class="section__title--bio text-end"><span>01</span>¡Bienvenido al Muro de Registro!</h2>
+        </div>
+        <div class="col-lg-6 col-md-8 p-3 p-lg-5">
+          <p>En esta sección, te guiaremos a través del proceso de registro inicial para obtener tu usuario y contraseña, lo cual te permitirá acceder a todos los beneficios y servicios que ofrecemos en nuestra plataforma en línea.
+            Registro por Primera Vez:
+            Si eres propietario o inquilino de uno de nuestros departamentos y es la primera vez que accedes a nuestra plataforma, necesitarás completar un sencillo formulario de registro para generar tus credenciales de inicio de sesión.
+            <strong>Proceso de Registro:</strong>
+            Para registrarte por primera vez, sigue estos simples pasos:
+            Accede a la opción de "Registro" en la parte superior derecha de esta página.
+            Completa el formulario de registro con la información requerida, incluyendo tu nombre completo, dirección de correo electrónico y otros datos pertinentes.
+            Una vez que hayas completado el formulario, haz clic en el botón de "Enviar" para procesar tu solicitud.
+            En breve, recibirás un correo electrónico de confirmación en la dirección proporcionada. Sigue las instrucciones contenidas en este correo para verificar tu cuenta y establecer tu contraseña de acceso.
+            Una vez que hayas verificado tu cuenta y establecido tu contraseña, podrás iniciar sesión en nuestra plataforma utilizando tu nuevo usuario y contraseña.
+            <strong>Beneficios de Registrarte:</strong>
+            Al registrarte en nuestra plataforma en línea, tendrás acceso a una variedad de servicios y funcionalidades diseñadas para mejorar tu experiencia como miembro de nuestra comunidad. Podrás realizar consultas, acceder a documentos importantes, solicitar servicios y mucho más, todo desde la comodidad de tu hogar.
+            ¡No esperes más! Regístrate hoy mismo y comienza a disfrutar de todos los beneficios que tenemos para ofrecerte.
+            Si tienes alguna pregunta o necesitas asistencia durante el proceso de registro, no dudes en contactarnos. Estamos aquí para ayudarte en cada paso del camino.
+            ¡Gracias por unirte a nuestra comunidad en línea y por confiar en nosotros para satisfacer tus necesidades de vivienda!</p>
+          <!-- <p>falta colocar texto aca </p> -->
+        </div>
+      </div>
+<!-- formulario -->
+<section class="section">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col">
+          <h2 class="section__title--form">Registro por primera vez</h2>
+        <form class="section__form" id="formIngreso" enctype="text/plain">
+            <label for="name" required>Nombre y Apellido</label>
+            <input type="text" id="nameandsurname" name="nameandsurname" placeholder="Nombre y Apellido">
+            <label for="name" required>N° de identificacion</label>
+            <input type="number" id="identitycard" name="identitycard" placeholder="N° Identificación">
+            <label for="Usuario" required>Nombre de Usuario</label>
+            <input type="text" id="user" name="user" placeholder="Usuario">
+            <label for="E-mail" required>Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="contraseña">
+           <!--  <input type="checkbox" id="accept" name="accept"> -->
+           <!--  <label for="accept">Acepto recibir notificaciones</label> -->
+           <!--  <input type="submit" value="Enviar"> -->
+          <!-- boton que sirve pero se comenta pero anda bien  <button onclick="add2(
+                              document.getElementById('fname1').value,
+                              document.getElementById('mail1').value,
+                              document.getElementById('mail21').value,
+                              document.getElementById('password').value, event)"></button> -->
+          <input type="submit" value="Enviar" onclick="add(event)"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+</footer>
+<!-- pie de pag -->
+</footer>
+<!-- este link de aca abajo se saco de bootstrap -- es el script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+crossorigin="anonymous"></script>
+<!--    el script es para llamar a java script  -->
+<script src="../js/index.js"></script>
+</body>
+</html>
