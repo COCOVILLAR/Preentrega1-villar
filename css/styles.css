@@ -1,4 +1,4 @@
-body {
+/* body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
@@ -24,3 +24,600 @@ button {
     cursor: pointer;
 }
 
+
+header {
+    
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.sectorpago {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.boton2 {
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ */
+
+
+
+/* Colores */
+/* Reset */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:hover {
+  outline: 0;
+}
+
+iframe,
+img {
+  border: 0;
+}
+
+dl,
+ol,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+/* General */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #444;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+dl dt {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.header .header__logo {
+  width: 100px;
+  height: 60px;
+  vertical-align: middle;
+  display: inline-block;
+  background-image: url(../img/icono-edificio.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .header__menu input {
+  position: absolute;
+  z-index: 8;
+  opacity: 0;
+  transform: scale(1.5);
+}
+.header .header__menu input, .header .header__menu .header__icon-open, .header .header__menu .header__icon-close {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+.header .header__menu .header__icon-open,
+.header .header__menu .header__icon-close {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header .header__menu .header__icon-open {
+  background-image: url(../img/clientes.jpeg);
+}
+.header .header__menu .header__icon-close {
+  background-image: url(../img/ico-close.svg);
+}
+.header .header__menu ul {
+  display: flex;
+}
+.header .header__menu ul li {
+  margin: 0 10px;
+}
+.header .header__menu ul li .header__link {
+  color: #fff;
+  text-decoration: none;
+}
+.header .header__menu ul li .header__link:after {
+  content: "";
+  display: block;
+  background: #000;
+  width: 100%;
+  height: 4px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+.header .header__menu ul li .header__link:hover:after, .header .header__menu ul li .header__link--active:after {
+  background: #fff;
+  margin-top: 0;
+}
+
+/* Footer */
+.footer {
+  position: relative;
+  text-align: center;
+  background: #000;
+}
+.footer .footer__top {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  padding: 4px;
+  position: absolute;
+  bottom: 3rem;
+  right: 20px;
+  object-fit: contain;
+}
+.footer .footer__top img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.footer .footer__top:hover {
+  filter: invert(100%);
+  transition: all 0.3s ease;
+}
+.footer .footer__logo {
+  width: 200px;
+  height: auto;
+  margin-bottom: 25px;
+}
+.footer .footer__menu {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.footer .footer__menu li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.footer .footer__menu li a:hover img {
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.footer .footer__menu li a img {
+  width: 100%;
+  height: auto;
+}
+.footer .footer__copy {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 50px;
+}
+
+/* Main */
+main {
+  margin-top: 80px;
+  padding-bottom: 120px;
+}
+
+/* intro */
+.intro {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.intro .intro__title {
+  font-size: 12vw;
+  font-weight: 900;
+  text-align: center;
+  margin: -40px 0 0;
+}
+.intro .intro__title span {
+  display: block;
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+#backgroundA .intro__title {
+  background: #6b6b83; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bioIntro .intro__title {
+  background: #659999; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #cc8300, #659999); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #cc8300, #659999); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#duoIntro .intro__title {
+  background: #659982; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #ffba3e, #659982); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #ffba3e, #659982); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#interIntro .intro__title {
+  background: #7aeeff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7aeeff, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7aeeff, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#discoIntro .intro__title {
+  background: #6b6b83; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3b8d99, #6b6b83, #aa4b6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* section */
+.section {
+  background: #fff;
+  width: 100%;
+}
+
+.section--black {
+  background: #000;
+}
+
+.section--border {
+  border-top: 1px solid #000;
+}
+
+.section .section__title,
+.section .section__title--form,
+.section .section__title--play,
+.section .section__title--bio,
+.section .section__title--duo,
+.section .section__title--slide,
+.section .section__title--disco {
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.section .section__title--form,
+.section .section__title--play,
+.section .section__title--slide,
+.section .section__title--disco {
+  text-align: center;
+}
+
+.section .section__title--bio,
+.section .section__title--duo {
+  margin-bottom: 0;
+}
+
+.section .section__title--bio span {
+  font-weight: 900;
+  font-size: 18vw;
+  line-height: 1;
+  display: block;
+}
+
+.section .section__title--duo {
+  margin-top: 20px;
+}
+
+.section .section__title--slide {
+  color: #fff;
+}
+
+/* section slide */
+.section .section__form {
+  width: 350px;
+  margin: 0 auto;
+  text-align: left;
+}
+.section .section__form label {
+  margin-bottom: 10px;
+}
+.section .section__form input {
+  display: block;
+  padding: 10px 8px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.section .section__form input[type=checkbox] {
+  display: inline-block;
+  width: 20px;
+}
+.section .section__form input[type=submit] {
+  width: 150px;
+  margin: 20px auto;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  border-color: #000;
+  transition: all 0.3s ease;
+}
+.section .section__form input[type=submit]:hover {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+/* section slide */
+.section .section__play {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+}
+
+/* section slide */
+.section .slide {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+/* section grid */
+.section .section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.section .section__grid .grid__item {
+  overflow: hidden;
+}
+.section .section__grid .grid__item a:hover img {
+  transform: scale(1.1);
+  filter: grayscale(1);
+  transition: all 0.3s ease;
+}
+
+/* para fondos fijos */
+/* fondo fixed Index A */
+#backgroundA {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/bgA.jpg);
+}
+
+/* fondo fixed Index B */
+#backgroundB {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/bgB.jpg);
+}
+
+/* fondo fixed Index C */
+#backgroundC {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/bgC.jpg);
+}
+
+/* fondo fixed Biografia */
+#bioIntro {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image: url(../img/bioIntro.jpg); */
+}
+
+/* fondo fixed Duo */
+#duoIntro {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/duoIntro.jpg);
+}
+
+/* fondo fixed Interestella */
+#interIntro {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/interestellar.avif);
+}
+
+/* fondo fixed discografia */
+#discoIntro {
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: url(../img/discoIntro.jpg);
+}
+
+/* para rows */
+.row--reverse {
+  display: flex;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .header .header__menu input,
+  .header .header__menu .header__icon-open,
+  .header .header__menu .header__icon-close {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .intro .intro__title {
+    font-size: 14vw;
+  }
+  .intro .intro_title span {
+    font-size: 6vw;
+  }
+  .bg--fixed {
+    height: 50vh;
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 767px) {
+  /* Header */
+  .header .header__menu input {
+    display: block;
+  }
+  .header .header__menu input ~ .header__icon-close,
+  .header .header__menu input:checked + .header__icon-open {
+    display: none;
+  }
+  .header .header__menu input:checked ~ .header__icon-close {
+    display: block;
+  }
+  .header .header__menu ul {
+    visibility: hidden;
+    flex-direction: column;
+    background: #000;
+    height: calc(100vh - 80px);
+    width: 80%;
+    position: absolute;
+    padding: 0 20px;
+    transition: all 0.5s ease-out;
+    top: 80px;
+    right: -767px;
+    text-align: right;
+  }
+  .header .header__menu input:checked ~ ul {
+    visibility: visible;
+    top: 80px;
+    right: 0;
+  }
+  .header .header__menu ul li {
+    margin: 10px;
+  }
+  /* Footer */
+  .footer .footer__top {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  }
+  .footer .footer__top img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer .footer__logo {
+    width: 100px;
+  }
+  .footer .footer__copy {
+    margin-top: 30px;
+  }
+  /* Main */
+  main {
+    padding-bottom: 80px;
+  }
+  .bg--fixed {
+    height: 35vh;
+    background-attachment: scroll;
+  }
+  .section .section__title,
+  .section .section__title--form,
+  .section .section__title--bio,
+  .section .section__title--play,
+  .section .section__title--duo,
+  .section .section__title--slide,
+  .section .section__title--disco {
+    font-size: 32px;
+    text-align: center !important;
+  }
+  .row--reverse {
+    flex-direction: column-reverse;
+  }
+  .section .section__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .section .section__form,
+  .section .section__play {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
+
+
+
+
+ 

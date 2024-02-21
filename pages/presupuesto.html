@@ -1,0 +1,163 @@
+<!-- click derecho Format Document para ordenar el codigo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Presupuesto</title>
+    <meta name="description" content="En Edificio La Rotendiu, nos dedicamos a ofrecer soluciones integrales en consultoría, problematicas. Con un enfoque centrado en la excelencia y la innovación, trabajamos de la mano de nuestros clientes".>
+    <meta name="keywords" content="Alquiler, proyectos, contratos, consultora, casas, departamentos, problematicas, consultas">
+    <link rel="icon" href="../img/icono-edificio.png">
+    <!-- Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap -->
+    <!--   este link de abajo de saca de bootstrap cdn js deliver se copia uno aca encima y el otro link que dice script se pega abajo en parte inferior antes del cierre de body-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+       <!-- Style  
+    <link rel="stylesheet" href="./scss/style.css"> queda pendiente cambiarlo por el de sass-->   
+        <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header container-fluid">
+      <a class="header__logo" href="../index.html"></a>
+      <nav class="header__menu">
+        <input type="checkbox" id="menu__mobile">
+        <span class="header__icon-open"></span>
+        <span class="header__icon-close"></span>
+        <ul>
+          <li><a class="header__link" href="../index.html">Inicio</a></li>
+          <li><a class="header__link" href="./consultas.html">Tu consulta</a></li>
+          <li><a class="header__link" href="./contrato.html">Contrato</a></li>
+          <li><a class="header__link header__link--active" href="./presupuesto.html">Presupuesto</a></li>
+          <li><a class="header__link" href="./quejas.html">Quejas</a></li> 
+          <li><a class="header__link" href="./registroingreso.html">Registro</a></li>
+        </ul>
+      </nav>
+    </header>
+
+ <!-- Main -->
+ <main id="top">
+
+   <!-- Intro Biografia -->
+   <section id="bioIntro" class="intro bg--fixed">
+    <div class="container">
+      <h1 class="intro__title">Presupuesto</h1>
+    </div>
+  </section>  
+
+  <!-- texto Biografia -->
+  <section class="section">
+    <div class="container">
+
+      <div class="row py-5">
+        <div class="col-lg-6 col-md-4 p-3 p-lg-5">
+          <h2 class="section__title--bio text-end"><span>01</span>Bienvenido al sector de contratos!</h2>
+        </div>
+        <div class="col-lg-6 col-md-8 p-3 p-lg-5">
+          <p>¡Bienvenido a la Sección de Presupuesto!
+
+            En esta sección, te proporcionaremos toda la información necesaria para obtener un presupuesto preciso y detallado para los servicios del consorcio. Nos esforzamos por ofrecerte transparencia y claridad en cada aspecto relacionado con los costos asociados a la administración y mantenimiento de nuestro edificio.
+            
+            Descuento por Pago en Efectivo:
+            Queremos recompensar tu compromiso y prontitud en el pago de los servicios del consorcio. Por eso, ofrecemos un atractivo descuento del 10% en el total de tu factura cuando realizas el pago en efectivo. Este descuento es una manera de valorar tu colaboración y contribución al bienestar de nuestra comunidad.
+        </div>
+    </div>
+            <div class="row pt-5 pb-5 row--reverse">
+                <div class="col-lg-6 col-md-8 p-3 p-lg-5">
+                  <p>Para solicitar un presupuesto personalizado, simplemente completa el formulario de contacto que encontrarás en esta página. Nuestro equipo se pondrá en contacto contigo a la brevedad para recopilar la información necesaria y proporcionarte un presupuesto detallado y ajustado a tus necesidades específicas.</p>
+                  <p>Transparencia y Claridad:
+                    Nos comprometemos a brindarte un presupuesto claro y transparente, donde cada costo esté detallado y explicado de manera comprensible. Queremos que tengas plena confianza en los servicios que ofrecemos y en los costos asociados a los mismos.
+                    Atención Personalizada:
+                    Nuestro equipo está aquí para responder cualquier pregunta que puedas tener sobre el presupuesto, los servicios incluidos y cualquier otra información relacionada. No dudes en contactarnos si necesitas asistencia adicional o deseas obtener más detalles sobre nuestro proceso de presupuestación.
+                    ¡Aprovecha el descuento por pago en efectivo y benefíciate de un ahorro adicional en tus pagos al consorcio! Estamos comprometidos en ofrecerte un servicio de calidad y valor agregado en cada paso del proceso. ¡Gracias por confiar en nosotros para la administración y mantenimiento de tu hogar!</p>
+                </div>
+                <div class="col-lg-6 col-md-4 p-3 p-lg-5">
+                  <h2 class="section__title--bio"><span>02</span>Proceso para Obtener un Presupuesto</h2>
+                </div>
+              </div>            
+            </section>
+
+
+
+
+
+
+
+ 
+          <!-- <p>falta colocar texto aca </p> -->
+        </div>
+      </div>
+<!-- formulario // en el action hay que escribir la ruta del archivo PHP. 
+en metodo se coloca el metodo con el cual vamos a interactuar que se llama htpp -->
+<section class="section">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col">
+          <h2 class="section__title--form">Cual es tu metodo de pago?</h2>
+          <form class="section__form" id="myForm" enctype="text/plain">
+            <label for="name" required>Nombre y Apellido</label>
+            <input type="text" id="fname" name="name" placeholder="Nombre y Apellido">
+            <label for="Metodedepago" required>Metodo de Pago</label>
+            <input type="text" id="mail" name="mail" placeholder="Tarjeta o efectivo">
+            <label for="Seraenviadoatugmail" required>Se incluye servicios</label>
+            <input type="text" id="mail2" name="siono" placeholder="Si o no">
+           <!--  <input type="checkbox" id="accept" name="accept"> -->
+           <!--  <label for="accept">Acepto recibir notificaciones</label> -->
+            <input type="submit" value="Enviar" onclick="calcularPrecioAlquilerConDescuentoPagandoEfectivo(1,99000)"></button>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+
+<!-- Footer -->
+<!-- Footer -->
+<footer class="footer container-fluid">
+    <div class="row pt-5 pb-5">
+      <div class="col">
+        <a href="#top" class="footer__top"><img src="../img/flecha-blanca-icono-abajo-derecha.png" alt="Volver arriba"></a>
+        <img class="footer__logo" src="../img/icono-edificio.png" alt="Edificio La Rotendiu">
+        <ul class="footer__menu">
+          <li><a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="../img/iconofacebook.png"
+                alt="Facebook"></a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" title="Instagram"><img src="../img/Instagram-icono.png"
+                alt="Instagram"></a></li>
+          <li><a href="https://twitter.com/home?lang=es" target="_blank" title="Twitter"><img src="../img/twittericono.png"
+                alt="Twitter"></a></li>
+          <li><a href="https://www.tiktok.com/es/" target="_blank" title="TikTok"><img src="../img/tiktok-iconoblanco.png"
+                alt="TikTok"></a>
+          </li>
+          <li><a href="https://www.youtube.com/" target="_blank" title="Youtube"><img src="../img/YouTubeicono.png"
+                alt="Youtube"></a>
+          </li>
+          <li><a href="https://open.spotify.com/intl-es" target="_blank" title="Spotify"><img src="../img/spotify_icono.png"
+                alt="Spotify"></a></li>
+        </ul>
+        <p class="footer__copy">Copyright 2024</p>
+      </div>
+    </div>
+  </footer>
+    <!-- pie de pag -->
+</footer>
+<!-- este link de aca abajo se saco de bootstrap -- es el script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+<!--    el script es para llamar a java script  -->
+<script src="../js/archivoparapresupuesto.js"></script>
+</body>
+</html>
+
