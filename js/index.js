@@ -1,6 +1,6 @@
 
 
-//falta que cuando se solucione dicho problema se envie un mail al usuario que hizo dicha queja
+/* //falta que cuando se solucione dicho problema se envie un mail al usuario que hizo dicha queja
 //faltaria espacio para colocar ubicacion / descripciones de problema / foto
 
 
@@ -50,13 +50,13 @@ function enviarQueja(event) {
   
   
   
-  
+   */
   
   
   
   
   //alquiler presupuesto 
-   function calcularPrecioAlquilerConDescuentoPagandoEfectivo(cantidad, precioUnitario, event){
+  /*  function calcularPrecioAlquilerConDescuentoPagandoEfectivo(cantidad, precioUnitario, event){
       let precioTotal= cantidad * precioUnitario;
   
       if(cantidad >=100000){
@@ -122,7 +122,7 @@ function enviarQueja(event) {
   //console.log(esPasswordValida("consuelo"));
   
   
-  
+   */
   
   
   
