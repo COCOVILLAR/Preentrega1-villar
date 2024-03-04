@@ -46,4 +46,10 @@ function enviarQueja(event) {
   }
   
   
-  
+  // le voy a poner un tono para cambiar a rojo o gris cuando vayamos a sector queja jaja
+
+  const cambiarColor = document.getElementById("cambiarColor");
+
+  cambiarColor.addEventListener('click', function(){
+    document.body.style.backgroundColor = 'red'
+  })
