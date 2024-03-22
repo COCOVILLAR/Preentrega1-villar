@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- SEO -->
-  <title>Tu consulta</title>
+  <title>CarritoTudo</title>
   <meta name="description"
     content="Aqui puedes hacer consultas respecto a dudas, circunstancias ocurridas, preguntas frecuentes".>
   <meta name="keywords" content="Edificio, Alquiler, consultas">
@@ -76,26 +76,19 @@
             </div>
           </div>
   
-<!-- formulario -->
-<!-- formulario -->
+  
+<!-- formulario PROBADO-->
 <section class="section">
   <div class="container">
     <div class="row py-5">
-      <div class="col">
-        <h2 class="section__title--form">Completa el siguiente formulario "Sección CarritoTudo"</h2>
+      <div class="col" id="iniciosesion">
+        <h2 class="section__title--form">INICIA SESION</h2>
         <form class="section__form" action="" method="" enctype="text/plain">
-          <label for="name" required>Nombre y Apellido</label>
-          <input type="text" id="nameandsurname" name="name" placeholder="Nombre y Apellido">
-          <label for="mail" required>DNI</label>
-          <input type="number" id="identitycard" name="mail" placeholder="DNI">
-          <label for="mail" required>Cual es tu departamento?</label>
-          <input type="number" id="usernumber" name="mail" placeholder="N° de departamento">
-          <label for="mail" required>En que horarios te encontras en el departamento?</label>
-          <input type="text" id="hours" name="mail" placeholder="Horarios disponibles">
-         <!--  <input type="checkbox" id="accept" name="accept"> -->
-         <!--  <label for="accept">Acepto recibir notificaciones</label> -->
-         <input type="submit" value="Enviar" onclick="add(event)"></input>
-       <!--   <input type="submit" value="Enviar"> -->
+            <label for="name" required>Usuario</label>
+            <input type="text" id="nameandsurname" name="name" placeholder="Usuario">
+            <label for="text" required>Contraseña</label>
+            <input type="password" id="identitycard" name="mail" placeholder="Contraseña">        
+            <input type="submit" value="Enviar" onclick="add2(event)"></input> 
         </form>
       </div>
     </div>
@@ -103,7 +96,10 @@
 </section>
 </main>
  
+<!-- ESTE CARRITO ES EL VERDADERO NO BORRAR  -->
 <!-- Carrito aca se empieza  -->
+<!-- <h5>LISTA DE PRODUCTOS</h5>
+ -->
 <div class="contenedor-productos" id="contenedor-productos"></div>
 
 <div class="contenedor-carrito" id="contenedor-carrito"></div>
@@ -111,9 +107,13 @@
 
 <div class="icono-carrito" id="icono-carrito">
 <i class="material-icons">shopping_cart</i>
-<span class="cantidad-items" id="cantidad-items">0</span></div>
-
-
+<span class="cantidad-items" id="cantidad-items">0</span></div> 
+ <!-- probar si funca  -->
+ <div class="guardar-lista" id="guardar-lista">Guardar lista en el carrito</div> 
+ 
+ <div><p>Listado de productos</p></div>
+ <div id="ListadeProductos"></div>
+ 
 
 
 
